@@ -2,7 +2,7 @@ Caesar Cipher
 -------------
 
 
-Create a webapp, that is able to decode encoded text with Ceasar Cipher.
+Create a web-app, that is able to decode encoded text with Ceasar Cipher.
 
 It should have one page consisting several things:
  - A text area to place the encrypted text
@@ -20,7 +20,7 @@ The decryption should be done by a backend service:
       "text": "oruhp lsvxp groru vlw"
     }
   ```
-   - It should response with something like this (200 status):
+   - It should response with something like this (with 200 status):
   ```json
     {
       "status": "ok",
@@ -28,8 +28,8 @@ The decryption should be done by a backend service:
     }
   ```
    - It should accept shift number between -25 and 25
-   - It should not translate the the real letters (a-z and A-Z) (you can use the /[a-zA-Z]/ RegExp)
-   - If any of the properties are missing of the post data or the shift is out of bound it should response an error like (400 status):
+   - It should only translate the the real letters (a-z and A-Z) (you can use the `/[a-zA-Z]/` RegExp)
+   - If any of the properties are missing of the post data or the shift is out of bound it should response an error like (with 400 status):
   ```json
     {
       "status": "error",
