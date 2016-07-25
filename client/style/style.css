@@ -1,0 +1,35 @@
+body {
+  background-color: #d8bfd8;
+}
+
+p {
+  font-size: 40px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 60px;
+}
+
+.loaded {
+  display: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-color: grey;
+  min-height: 600px;
+  width: 60%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.input-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.text-input, .shift-input, .submit-button {
+  margin-top: 20px;
+}
